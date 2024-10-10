@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import one from "../../images/gallery_one.webp";
+import two from "../../images/gallery_two.webp";
+import three from "../../images/gallery_three.webp";
+import four from "../../images/gallery_four.webp";
+import five from "../../images/gallery_five.webp";
+---
+
+<section class="grid grid-cols-3 gap-4 p-4 mb-20"> 
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src={one}
+        alt="img"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/1J3SqW7Lia4"
+        title="YouTube video"
+      >
+      </iframe>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src={two}
+        alt="img"
+        class="h-aufull w-full object-cover"
+      />
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src={three}
+        alt="img"
+        class="h-full w-full object-cover"
+      />
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src={four}
+        alt="img"
+        class="h-full w-full object-cover"
+      />
+    </div>
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src={five}
+        alt="img"
+        class="h-full w-full object-cover"
+      />
+    </div>
+</section>
