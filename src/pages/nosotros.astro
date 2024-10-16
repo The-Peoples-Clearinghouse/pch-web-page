@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import one from "../images/gallery_six.jpg";
+import two from "../images/gallery_seven.webp";
+import three from "../images/gallery_four.webp";
+---
+
+<Layout title="La cámara de la gente">
+  <section class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-12 my-32">
+      <Image
+        src={one}
+        alt="img"
+        class="h-full w-full object-cover rounded-lg overflow-hidden"
+      />
+      <div class="flex flex-col gap-5 rounded-lg shadow-2xl p-10 sm:p-20">
+        <h2 class="font-bold md:text-5xl">Historia</h2>
+        <p class="text-sm text-gray-500 sm:text-base">
+          Detrás de la Cámara de la Gente, hay diversas instituciones clave,
+          como la Asociación Mexicana de Uniones de Crédito del Sector Social
+          (AMUCSS), y diversas Sociedades Cooperativas de Ahorro y Préstamo.
+          <br /><br />
+          AMUCSS lidera una red de 140 bancos comunitarios en todo México, que cubre
+          34 lenguas indígenas, y en que el 60% de los clientes finales son mujeres
+          de regiones marginadas.
+          <br /><br />
+          La Cámara de la Gente es impulsada por expertos del sector financiero popular,
+          con amplia experiencia en finanzas sociales, remesas, sistemas de pago
+          y justicia social. Te invitamos a unirte a este gran proyecto por la inclusión
+          financiera real.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-12 my-32">
+      <div class="flex flex-col gap-5 rounded-lg shadow-2xl p-10 sm:p-20">
+        <h2 class="font-bold md:text-5xl">Equipo</h2>
+        <p class="text-sm text-gray-500 sm:text-base">
+          Detrás de la Cámara de la Gente, hay diversas instituciones clave,
+          como la Asociación Mexicana de Uniones de Crédito del Sector Social
+          (AMUCSS), y diversas Sociedades Cooperativas de Ahorro y Préstamo.
+          <br /><br />
+          AMUCSS lidera una red de 140 bancos comunitarios en todo México, que cubre
+          34 lenguas indígenas, y en que el 60% de los clientes finales son mujeres
+          de regiones marginadas.
+          <br /><br />
+          La Cámara de la Gente es impulsada por expertos del sector financiero popular,
+          con amplia experiencia en finanzas sociales, remesas, sistemas de pago
+          y justicia social. Te invitamos a unirte a este gran proyecto por la inclusión
+          financiera real.
+        </p>
+      </div>
+
+      <Image
+        src={two}
+        alt="img"
+        class="h-full w-full object-cover rounded-lg overflow-hidden"
+      />
+    </div>
+
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-12 my-32">
+      <Image
+        src={three}
+        alt="img"
+        class="h-full w-full object-cover rounded-lg overflow-hidden"
+      />
+      <div class="flex flex-col gap-5 rounded-lg shadow-2xl p-10 sm:p-20">
+        <h2 class="font-bold md:text-5xl">Misión</h2>
+        <p class="text-sm text-gray-500 sm:text-base">
+          Cambiar la vida de millones de personas que viven en comunidades,
+          mediante la inclusión financiera digital y el acceso a remesas a
+          cuenta y servicios de crédito justo.
+          <br /><br />
+          En particular, cada remesa que se deposita en una cuenta de ahorros (y
+          no en efectivo) en un banco comunitario o en una cooperativa de ahorro
+          (y no en un banco comercial) empodera a la comunidad y puede tener un impacto
+          social masivo. ¿Cómo?
+          <br /><br />
+          Más remesas a cuenta implican mayor volumen de ahorro e inversión, que
+          llevan a más créditos para proyectos productivos locales, que llevan a
+          más empleos y oportunidades regionales, que llevan a tener menos desigualdad,
+          pues toda la comunidad se beneficia, no sólo quienes reciben remesas.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
