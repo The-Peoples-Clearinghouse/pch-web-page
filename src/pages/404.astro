@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import notFound from "../images/404.svg";
+---
+
+<Layout title="La Cámara de la Gente">
+    <section class="my-32 text-center">
+        <p class="font-semibold text-primary">404</p>
+        <h1 class="text-3xl font-bold sm:text-5xl">Página no encontrada</h1>
+        <p class="mt-6 text-gray-600 mb-20">
+            Lo sentimos, no pudimos encontrar la página que estás buscando.
+        </p>
+        <div class="flex flex-col items-center justify-between">
+            <Image src={notFound} alt="img" class="h-60 w-auto" />
+            <a
+                href="/"
+                class="bg-blue p-3 rounded bg-primary text-white hover:bg-secondary mt-20"
+            >
+                Ir a inicio
+            </a>
+        </div>
+    </section>
+</Layout>
